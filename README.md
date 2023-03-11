@@ -20,9 +20,9 @@ This program aims to automate the parsing of Vex Robotics Competitions into indi
 **Step 2:** Grabbing individual frames at specific timestamps
   
   Using FFmpeg, we can set a specific timestamp to load the m3u8 stream at, then grab a single frame of it using:
-  '''
+  ```
   $ ffmpeg -ss {TIMESTAMP} -copyts -i {URL} -frames:v 1 -q:v 1 {OUTPUT FILE NAME}
-  '''
+  ```
   
   From the Worlds Livestreams, this would give an image something like this: 
 ![Example Frame](MiscImages/exampleFrame.jpg)
