@@ -14,5 +14,5 @@ This program aims to automate the parsing of Vex Robotics Competitions into indi
 
   Vex uses a service called [BoxCast](https://www.boxcast.com/) to host their live streaming website. All of their streams are played back as m3u8 streams, which can be thought of as a playlist of smaller videos. Getting the links to these streams could be automated with scraping, but since I do not have permission, I will show you how to manually get the link to them. 
   
-[Getting m3u8 Stream](MiscImages/BoxTop.png)  
+![Getting m3u8 Stream](MiscImages/BoxTop.png)  
 
