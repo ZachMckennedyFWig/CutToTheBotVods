@@ -10,14 +10,14 @@ This program aims to automate the parsing of Vex Robotics Competitions into indi
   
 ## Detailed Explaination
 
-<p align="center"> <strong>Step 1:</strong> Obtaining the match from VexTV </p>
+####**Step 1:** Obtaining the match from VexTV
 
   Vex uses a service called [BoxCast](https://www.boxcast.com/) to host their live streaming website. All of their streams are played back as m3u8 streams, which can be thought of as a playlist of smaller videos. Getting the links to these streams could be automated with scraping, but since I do not have permission to scrape VexTV, I will show you how to manually get the link to them. 
   
 ![Getting m3u8 Stream](MiscImages/BoxTop.png)  
   By using the Network tab in developer tools while opening the BoxCast stream, then searching for m3u8, you can find the allbyteranges.m3u8 file. After clicking that, you can get the response which is a BoxCast link to the stream. That is what you will need to copy into the program. 
   
-**Step 2:** Grabbing individual frames at specific timestamps
+####**Step 2:** Grabbing individual frames at specific timestamps
   
   Using FFmpeg, we can set a specific timestamp to load the m3u8 stream at, then grab a single frame of it using:
   ```
@@ -27,7 +27,7 @@ This program aims to automate the parsing of Vex Robotics Competitions into indi
   From the Worlds Livestreams, this would give an image something like this: 
 ![Example Frame](MiscImages/exampleFrame.jpg)
 
-**Step 3:** Getting match info from frame
+####**Step 3:** Getting match info from frame
 
   This is the part where we use openCV and text OCR! Because text OCR is very finnicky with the images it can preoperly read, this is where most of the time was spent to get this working. The steps I found to most accuratly read the division name and qual number out of these matches was by:
   
