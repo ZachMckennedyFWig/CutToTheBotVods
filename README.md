@@ -39,6 +39,7 @@ This program aims to automate the parsing of Vex Robotics Competitions into indi
   - Using that information, Parse the division results json from RobotEvents and save that specific matches results. 
 
 After the image processing, the qualification number and division name images look like this: 
+  
   ![Division Example Image](MiscImages/DivisionExample.jpg) ![Qual Example Image](MiscImages/QualExample.jpg)
 
 ## Conclusion
