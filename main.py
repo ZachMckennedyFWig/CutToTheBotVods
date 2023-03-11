@@ -3,8 +3,8 @@ import cv2
 import tesserocr 
 import json
 
-url = 'https://play.boxcast.com/p/hjj77ajlnzmhpgb1p7n2/v/all-byteranges.m3u8?Expires=1678639104&Signature=dBzPGfAN-ALJjD7AA8CfCvN53PwMTxAa98ZignZET0IgkNDBcuGcXZWLka-zc20rZeBdhP~ZhxknniPN0bMlv4kFIYA1t3fpD4TMUI0WFr1PhDLTCDmo8-ZKKL1EPZGD7MPnZMevKBy59nYhn9-1rIBDOxF96~oUAGqgwPuJpbaT-6Kknsf0ROu1FDCUPmSistUmXUsKXRLZDOS8z-VNhmgJXYI-osnYuondcboMuzWzRODvdtDyMS99IZXdgsBm6k--UcMivbabSV4IZxvnYNA1NkNRcwmcpdMOnNFSnMN-Se2GtIth1XennQpGJ~~4U0yCRPsTeBgzR0c3-6VKVQ__&Key-Pair-Id=APKAJ7GUCBQUK6NTWZCA'
-DIVISION_NAME = 'Engineering'
+url = 'Enter m3u8 link here'
+DIVISION_NAME = 'Enter div name here'
 
 def frame_at_time(time_stamp):
     """
